@@ -1,4 +1,9 @@
 import login
 
-login.execute()
 
+professores = {} 
+diretores = {}
+direds = {}
+historico={}
+
+login.execute()
