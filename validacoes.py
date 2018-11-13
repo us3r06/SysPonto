@@ -1,9 +1,19 @@
-def cpfExistente(cpf):
-	if cpf in clientes:
+import SysPonto
+def cpfExistenteProfessor(cpf):
+	if cpf in SysPonto.professores:
 		print ("CPF já cadastrado")
 		return False
 	else:
 		return True
+	
+
+def cpfExistenteDiretor(cpf):
+	if cpf in SysPonto.diretores:
+		print ("CPF já cadastrado")
+		return False
+	else:
+		return True
+
 
 def validaCPF(cpf):
 	if len(cpf) != 11:

@@ -7,7 +7,7 @@ def menuCadastros():
 def cadastraProfessor():
 	nome =input("Digite o seu nome: ")
 	cpf = input("Digite o CPF: ")
-	while validacoes.validaCPF(cpf) == False or validacoes.pfExistente(cpf) == False:
+	while validacoes.validaCPF(cpf) == False or validacoes.cpfExistenteProfessor(cpf) == False:
 		print("CPF inválido.")
 		cpf = input("Digite seu CPF: ")
 	fone =input("Digite o seu celular = xxxxxxxxxxx ")
@@ -35,7 +35,7 @@ def cadastraProfessor():
 def cadastraDiretor():
 	nome =input("Digite o seu nome: ")
 	cpf = input("Digite o CPF: ")
-	while validacoes.validaCPF(cpf) == False or validacoes.pfExistente(cpf) == False:
+	while validacoes.validaCPF(cpf) == False or validacoes.cpfExistenteDiretor(cpf) == False:
 		print("CPF inválido.")
 		cpf = input("Digite seu CPF: ")
 	fone =input("Digite o seu celular = xxxxxxxxxxx ")
