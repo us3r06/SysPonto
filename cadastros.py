@@ -101,7 +101,7 @@ def cadastraDired():
 	while validacoes.validaemail(email) == False:
 		email =input("Email inexistente \nDigite o seu email: ")
 	cidade =input("Digite a sua cidade: ")
-	SysPonto.Diretores[cod] = [fone,email,cidade]
+	SysPonto.Dired[cod] = [fone,email,cidade]
 	##grava_dired()
 	print(diretores)
 	print("DIRED cadastrada com sucesso")
