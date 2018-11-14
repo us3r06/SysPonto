@@ -17,6 +17,7 @@ def menuCadastros():
 	centralizar(b)
 	centralizar(c)
 	centralizar(e)
+	
 def executeCadastros():
 	while True:
 		menuCadastros()
