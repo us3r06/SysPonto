@@ -1,4 +1,5 @@
 import sys
+import cadastros
 def centralizar(a):
 	print(" "+a.center(70)+" ")
 
@@ -32,7 +33,6 @@ def execute():
 		elif opcaoLogin.strip() == '3':
 			menuDired()
 		elif opcaoLogin.strip() == '4':
-			cadastraUsuario()
+			executeCadastros()
 		else:
 			print(opcaoLogin, "não é uma opção válida!\n")
-
