@@ -16,7 +16,7 @@ def menuDiretor():
 		cpf = input("Digite seu CPF: ")
 	nasc = input("Digite o seu nascimento XX/XX/XXXX: ")
 	validacoes.validaData(nasc)
-	
+	choose = 0
 	if loginDiretor(cpf, nasc) == True:
 		escolha = input ("Digite 1 para registrar entrada. Digite 2 para registrar saída.\n")
 		if escolha == '1':
@@ -30,10 +30,13 @@ def menuDiretor():
 			hora = data()
 			choose = 'Saída'
 		else:
-			print("Opção inválida.")
-	SysPonto.historico[cpf] = [cpfreg, hora, choose]
-	
-def data()
+			print("Opção inválida")
+			menuDiretor()
+	if choose != '0'		
+		SysPonto.Historico[cpf] = [cpfreg, hora, choose]
+	else:
+		menuDiretor()
+def data() 
 	now = datetime.now()
 	return now
 	
