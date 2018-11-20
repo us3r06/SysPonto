@@ -31,7 +31,7 @@ def menuDiretor():
 			choose = 'Saída'
 		else:
 			print("Opção inválida.")
-	SysPonto.historico[cpf] = [cpfreg, hora, choose]
+	SysPonto.Historico[cpf] = [cpfreg, hora, choose]
 	
 def data()
 	now = datetime.now()
