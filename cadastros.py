@@ -33,7 +33,7 @@ def executeCadastros():
 			print(opcaoLogin, "não é uma opção válida!\n")
  def cadastraProfessor():
 	nome =input("Digite o seu nome: ")
-@@ -27,7 +57,7 @@ def cadastraProfessor():
+def cadastraProfessor():
 		estado = input("Estado Inválido.\nDigite o seu estado: ")
 	nome= nome
 	SysPonto.professores[cpf] = [nome,fone,cpf,email,nasc,cidade,estado]
@@ -42,7 +42,7 @@ def executeCadastros():
 	print(clientes)
 	print("Professor cadastrado com sucesso")
 	os.system ("cls")
-@@ -53,8 +83,25 @@ def cadastraDiretor():
+def cadastraDiretor():
 	nmrDired = input("Digite o número da DIRED a qual sua escola pertence: ")
 	nome= nome
 	SysPonto.Diretores[cpf] = [nome,fone,cpf,email,nasc,cidade,nmrDired]
@@ -51,7 +51,7 @@ def executeCadastros():
 	print(diretores)
 	print("Diretor cadastrado com sucesso")
 	os.system ("cls")
- def cadastraDired():
+def cadastraDired():
 	nome =input("Digite o Código da DIRED: ")
 	while validacoes.validafone(fone) == False:
 		fone =input("Digite o seu celular = xxxxxxxxxxx ")

@@ -17,7 +17,7 @@ def menuProf():
 	
 	nasc =input("Digite o seu nascimento XX/XX/XXXX: ")
 	validacoes.validaData(nasc)
-	
+	entrada = '0'
 	if loginProfessor(cpf, nasc) == True:
 		opcao = input("Digite 1 para entrada ou 2 para saida")
 		if opcao == '1':
@@ -28,10 +28,15 @@ def menuProf():
 			cpfEnv = cpf
 			dataAt = pegarData()
 			entrada = 'Saida'
+		else:
+			print('Opção inválida')
 			
 	else:
 		menuProf()	
+	if entrada != '0'
 	SysPonto.Histórico[cpf] = [cpfEnv,dataAt,entrada]
+	else:
+		menuProf()
 			
 	
 def pegarData():
