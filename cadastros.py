@@ -1,8 +1,8 @@
 import validacoes
 import SysPonto
- def centralizar(a):
+def centralizar(a):
 	print(" "+a.center(70)+" ")
- def menuCadastros():
+def menuCadastros():
 	
 	menu = "opções de Cadastros"
 	escolha = "Escolha a opção desejada"
