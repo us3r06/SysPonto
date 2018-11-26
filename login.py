@@ -1,5 +1,6 @@
 import sys
 import cadastros
+import professor
 def centralizar(a):
 	print(" "+a.center(70)+" ")
 
@@ -27,7 +28,7 @@ def execute():
 			print("Obrigado por usar o SysPonto")
 			sys.exit()
 		elif opcaoLogin.strip() == '1':
-			menuProfessor()
+			professor.menuProf()
 		elif opcaoLogin.strip() == '2':
 			menuDiretor()
 		elif opcaoLogin.strip() == '3':
