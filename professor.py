@@ -10,6 +10,7 @@ def loginProfessor(cpf, nasc):
 		return False
 	
 def menuProf():
+	print("-->Cadastrar ponto<--")
 	cpf = input("Digite o CPF: ")
 	while validacoes.validaCPF(cpf) == False or validacoes.cpfExistenteProfessor(cpf) == False:
 		print("CPF inválido.")
