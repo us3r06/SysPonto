@@ -34,7 +34,7 @@ def menuProf():
 	else:
 		menuProf()	
 	if entrada != '0':
-		 SysPonto.Histórico[cpf] = [cpfEnv,dataAt,entrada]
+		 SysPonto.Historico[cpf] = [cpfEnv,dataAt,entrada]
 	else:
 		menuProf()
 			
